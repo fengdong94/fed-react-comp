@@ -1291,15 +1291,6 @@
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
 
-"@rollup/pluginutils@^3.1.0":
-  version "3.1.0"
-  resolved "https://registry.npm.taobao.org/@rollup/pluginutils/download/@rollup/pluginutils-3.1.0.tgz?cache=0&sync_timestamp=1603765613301&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40rollup%2Fpluginutils%2Fdownload%2F%40rollup%2Fpluginutils-3.1.0.tgz#706b4524ee6dc8b103b3c995533e5ad680c02b9b"
-  integrity sha1-cGtFJO5tyLEDs8mVUz5a1oDAK5s=
-  dependencies:
-    "@types/estree" "0.0.39"
-    estree-walker "^1.0.1"
-    picomatch "^2.2.2"
-
 "@storybook/addons@6.1.12":
   version "6.1.12"
   resolved "https://registry.npm.taobao.org/@storybook/addons/download/@storybook/addons-6.1.12.tgz#e784c1481eaaa3aaf2c819b512a55c1f232cf6be"
@@ -1741,11 +1732,6 @@
   version "0.0.45"
   resolved "https://registry.npm.taobao.org/@types/estree/download/@types/estree-0.0.45.tgz#e9387572998e5ecdac221950dab3e8c3b16af884"
   integrity sha1-6Th1cpmOXs2sIhlQ2rPow7Fq+IQ=
-
-"@types/estree@0.0.39":
-  version "0.0.39"
-  resolved "https://registry.npm.taobao.org/@types/estree/download/@types/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"
-  integrity sha1-4Xfmme4bjCLSMXTKqnQiZEOJUJ8=
 
 "@types/glob-base@^0.3.0":
   version "0.3.0"
@@ -2225,7 +2211,7 @@ acorn@^6.0.1, acorn@^6.4.1:
   resolved "https://registry.npm.taobao.org/acorn/download/acorn-6.4.2.tgz?cache=0&sync_timestamp=1602534380346&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Facorn%2Fdownload%2Facorn-6.4.2.tgz#35866fd710528e92de10cf06016498e47e39e1e6"
   integrity sha1-NYZv1xBSjpLeEM8GAWSY5H454eY=
 
-acorn@^7.1.1:
+acorn@^7.1.0, acorn@^7.1.1:
   version "7.4.1"
   resolved "https://registry.npm.taobao.org/acorn/download/acorn-7.4.1.tgz?cache=0&sync_timestamp=1602534380346&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Facorn%2Fdownload%2Facorn-7.4.1.tgz#feaed255973d2e77555b83dbc08851a6c63520fa"
   integrity sha1-/q7SVZc9LndVW4PbwIhRpsY1IPo=
@@ -5009,11 +4995,6 @@ estree-walker@^0.6.1:
   resolved "https://registry.npm.taobao.org/estree-walker/download/estree-walker-0.6.1.tgz?cache=0&sync_timestamp=1607445876855&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Festree-walker%2Fdownload%2Festree-walker-0.6.1.tgz#53049143f40c6eb918b23671d1fe3219f3a1b362"
   integrity sha1-UwSRQ/QMbrkYsjZx0f4yGfOhs2I=
 
-estree-walker@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npm.taobao.org/estree-walker/download/estree-walker-1.0.1.tgz?cache=0&sync_timestamp=1607445876855&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Festree-walker%2Fdownload%2Festree-walker-1.0.1.tgz#31bc5d612c96b704106b477e6dd5d8aa138cb700"
-  integrity sha1-MbxdYSyWtwQQa0d+bdXYqhOMtwA=
-
 esutils@2.0.2:
   version "2.0.2"
   resolved "https://registry.npm.taobao.org/esutils/download/esutils-2.0.2.tgz#0abf4f1caa5bcb1f7a9d8acc6dea4faaa04bac9b"
@@ -5353,7 +5334,7 @@ find-cache-dir@^2.0.0, find-cache-dir@^2.1.0:
     make-dir "^2.0.0"
     pkg-dir "^3.0.0"
 
-find-cache-dir@^3.3.1:
+find-cache-dir@^3.0.0, find-cache-dir@^3.3.1:
   version "3.3.1"
   resolved "https://registry.npm.taobao.org/find-cache-dir/download/find-cache-dir-3.3.1.tgz#89b33fad4a4670daa94f855f7fbe31d6d84fe880"
   integrity sha1-ibM/rUpGcNqpT4Vff74x1thP6IA=
@@ -5589,11 +5570,6 @@ fsevents@^1.2.7:
   dependencies:
     bindings "^1.5.0"
     nan "^2.12.1"
-
-fsevents@~2.1.2:
-  version "2.1.3"
-  resolved "https://registry.npm.taobao.org/fsevents/download/fsevents-2.1.3.tgz#fb738703ae8d2f9fe900c33836ddebee8b97f23e"
-  integrity sha1-+3OHA66NL5/pAMM4Nt3r7ouX8j4=
 
 fsevents@~2.3.1:
   version "2.3.1"
@@ -8686,7 +8662,7 @@ performance-now@^2.1.0:
   resolved "https://registry.npm.taobao.org/performance-now/download/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
   integrity sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
 
-picomatch@^2.0.4, picomatch@^2.0.5, picomatch@^2.2.1, picomatch@^2.2.2:
+picomatch@^2.0.4, picomatch@^2.0.5, picomatch@^2.2.1:
   version "2.2.2"
   resolved "https://registry.npm.taobao.org/picomatch/download/picomatch-2.2.2.tgz#21f333e9b6b8eaff02468f5146ea406d345f4dad"
   integrity sha1-IfMz6ba46v8CRo9RRupAbTRfTa0=
@@ -9721,10 +9697,10 @@ resolve@1.1.7:
   resolved "https://registry.npm.taobao.org/resolve/download/resolve-1.1.7.tgz#203114d82ad2c5ed9e8e0411b3932875e889e97b"
   integrity sha1-IDEU2CrSxe2ejgQRs5ModeiJ6Xs=
 
-resolve@1.17.0:
-  version "1.17.0"
-  resolved "https://registry.npm.taobao.org/resolve/download/resolve-1.17.0.tgz#b25941b54968231cc2d1bb76a79cb7f2c0bf8444"
-  integrity sha1-sllBtUloIxzC0bt2p5y38sC/hEQ=
+resolve@1.12.0:
+  version "1.12.0"
+  resolved "https://registry.npm.taobao.org/resolve/download/resolve-1.12.0.tgz#3fc644a35c84a48554609ff26ec52b66fa577df6"
+  integrity sha1-P8ZEo1yEpIVUYJ/ybsUrZvpXffY=
   dependencies:
     path-parse "^1.0.6"
 
@@ -9808,21 +9784,28 @@ rollup-plugin-node-resolve@^5.2.0:
     resolve "^1.11.1"
     rollup-pluginutils "^2.8.1"
 
-rollup-plugin-peer-deps-external@^2.2.4:
+rollup-plugin-peer-deps-external@^2.2.0:
   version "2.2.4"
   resolved "https://registry.npm.taobao.org/rollup-plugin-peer-deps-external/download/rollup-plugin-peer-deps-external-2.2.4.tgz#8a420bbfd6dccc30aeb68c9bf57011f2f109570d"
   integrity sha1-ikILv9bczDCutoyb9XAR8vEJVw0=
 
-rollup-plugin-typescript2@^0.29.0:
-  version "0.29.0"
-  resolved "https://registry.npm.taobao.org/rollup-plugin-typescript2/download/rollup-plugin-typescript2-0.29.0.tgz#b7ad83f5241dbc5bdf1e98d9c3fca005ffe39e1a"
-  integrity sha1-t62D9SQdvFvfHpjZw/ygBf/jnho=
+rollup-plugin-typescript2@^0.25.3:
+  version "0.25.3"
+  resolved "https://registry.npm.taobao.org/rollup-plugin-typescript2/download/rollup-plugin-typescript2-0.25.3.tgz#a5fb2f0f85488789334ce540abe6c7011cbdf40f"
+  integrity sha1-pfsvD4VIh4kzTOVAq+bHARy99A8=
   dependencies:
-    "@rollup/pluginutils" "^3.1.0"
-    find-cache-dir "^3.3.1"
+    find-cache-dir "^3.0.0"
     fs-extra "8.1.0"
-    resolve "1.17.0"
-    tslib "2.0.1"
+    resolve "1.12.0"
+    rollup-pluginutils "2.8.1"
+    tslib "1.10.0"
+
+rollup-pluginutils@2.8.1:
+  version "2.8.1"
+  resolved "https://registry.npm.taobao.org/rollup-pluginutils/download/rollup-pluginutils-2.8.1.tgz#8fa6dd0697344938ef26c2c09d2488ce9e33ce97"
+  integrity sha1-j6bdBpc0STjvJsLAnSSIzp4zzpc=
+  dependencies:
+    estree-walker "^0.6.1"
 
 rollup-pluginutils@^2.8.1:
   version "2.8.2"
@@ -9831,12 +9814,14 @@ rollup-pluginutils@^2.8.1:
   dependencies:
     estree-walker "^0.6.1"
 
-rollup@^2.33.3:
-  version "2.36.1"
-  resolved "https://registry.npm.taobao.org/rollup/download/rollup-2.36.1.tgz?cache=0&sync_timestamp=1609940299666&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Frollup%2Fdownload%2Frollup-2.36.1.tgz#2174f0c25c7b400d57b05628d0e732c7ae8d2178"
-  integrity sha1-IXTwwlx7QA1XsFYo0Ocyx66NIXg=
-  optionalDependencies:
-    fsevents "~2.1.2"
+rollup@^1.27.13:
+  version "1.32.1"
+  resolved "https://registry.npm.taobao.org/rollup/download/rollup-1.32.1.tgz?cache=0&sync_timestamp=1609940299666&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Frollup%2Fdownload%2Frollup-1.32.1.tgz#4480e52d9d9e2ae4b46ba0d9ddeaf3163940f9c4"
+  integrity sha1-RIDlLZ2eKuS0a6DZ3erzFjlA+cQ=
+  dependencies:
+    "@types/estree" "*"
+    "@types/node" "*"
+    acorn "^7.1.0"
 
 rsvp@^4.8.4:
   version "4.8.5"
@@ -10943,10 +10928,10 @@ ts-pnp@^1.1.6:
   resolved "https://registry.npm.taobao.org/ts-pnp/download/ts-pnp-1.2.0.tgz#a500ad084b0798f1c3071af391e65912c86bca92"
   integrity sha1-pQCtCEsHmPHDBxrzkeZZEshrypI=
 
-tslib@2.0.1:
-  version "2.0.1"
-  resolved "https://registry.npm.taobao.org/tslib/download/tslib-2.0.1.tgz?cache=0&sync_timestamp=1609887446826&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftslib%2Fdownload%2Ftslib-2.0.1.tgz#410eb0d113e5b6356490eec749603725b021b43e"
-  integrity sha1-QQ6w0RPltjVkkO7HSWA3JbAhtD4=
+tslib@1.10.0:
+  version "1.10.0"
+  resolved "https://registry.npm.taobao.org/tslib/download/tslib-1.10.0.tgz?cache=0&sync_timestamp=1609887446826&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftslib%2Fdownload%2Ftslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
+  integrity sha1-w8GflZc/sKYpc/sJ2Q2WHuQ+XIo=
 
 tslib@^1.9.0:
   version "1.14.1"
