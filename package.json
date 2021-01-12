@@ -1,6 +1,6 @@
 {
   "name": "fed-react-comp",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A react components library",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -65,7 +65,7 @@
     ]
   },
   "peerDependencies": {
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react": ">=^16.8.0",
+    "react-dom": ">=^16.8.0"
   }
 }

@@ -3,20 +3,33 @@ import commonjs from 'rollup-plugin-commonjs'
 import external from 'rollup-plugin-peer-deps-external'
 import resolve from 'rollup-plugin-node-resolve'
 
-import pkg from './package.json'
+const { readdirSync } = require('fs')
+
+const getInput = () => {
+  const input = { index: 'src/index.tsx' }
+
+  const files = readdirSync('src', { encoding: 'utf8', withFileTypes: false })
+  files.forEach((item) => {
+    if (item !== 'index.tsx') {
+      input[item] = `src/${item}/index.tsx`
+    }
+  })
+
+  return input
+}
 
 export default {
-  input: 'src/index.ts',
+  input: getInput(),
   output: [
     {
-      file: pkg.main,
+      dir: 'lib',
       format: 'cjs',
       exports: 'named',
       sourcemap: true
     },
     {
-      file: pkg.module,
-      format: 'esm',
+      dir: 'es',
+      format: 'es',
       exports: 'named',
       sourcemap: true
     }
