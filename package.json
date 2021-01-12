@@ -1,16 +1,19 @@
 {
   "name": "fed-react-comp",
-  "version": "0.0.1",
-  "description": "",
-  "main": "build/index.js",
-  "module": "build/index.es.js",
-  "jsnext:main": "build/index.es.js",
+  "version": "0.0.2",
+  "description": "A react components library",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "lib",
+    "es"
+  ],
   "scripts": {
+    "lint": "eslint --ext .ts,.tsx,.js src",
     "build": "rollup -c",
-    "lint": "standard",
-    "format": "prettier-standard --format",
     "test": "jest --coverage",
-    "storybook": "start-storybook -p 6006"
+    "storybook": "start-storybook -p 6001",
+    "format": "prettier --write src"
   },
   "keywords": [],
   "author": "Fred",
@@ -28,11 +31,11 @@
     "jest": "^24.9.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "rollup": "^1.27.13",
+    "rollup": "^2.33.3",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-peer-deps-external": "^2.2.0",
-    "rollup-plugin-typescript2": "^0.25.3",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript2": "^0.29.0",
     "standard": "^14.3.1",
     "standard-prettier": "^1.0.1",
     "ts-jest": "^24.2.0",
@@ -42,13 +45,15 @@
     "preset": "ts-jest",
     "testEnvironment": "jsdom",
     "testPathIgnorePatterns": [
-      "build/"
+      "lib/",
+      "es/"
     ]
   },
   "standard": {
     "ignore": [
       "node_modules/",
-      "build/"
+      "lib/",
+      "es/"
     ],
     "globals": [
       "describe",
