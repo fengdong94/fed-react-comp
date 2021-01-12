@@ -1,0 +1,66 @@
+{
+  "name": "fed-react-comp",
+  "version": "0.0.1",
+  "description": "",
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "jsnext:main": "build/index.es.js",
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "standard",
+    "format": "prettier-standard --format",
+    "test": "jest --coverage",
+    "storybook": "start-storybook -p 6006"
+  },
+  "keywords": [],
+  "author": "Fred",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@storybook/react": "^6.1.12",
+    "@testing-library/jest-dom": "^5.11.8",
+    "@testing-library/react": "^11.2.3",
+    "@types/jest": "^24.0.24",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.2.2",
+    "jest": "^24.9.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "rollup": "^1.27.13",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-typescript2": "^0.25.3",
+    "standard": "^14.3.1",
+    "standard-prettier": "^1.0.1",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.3"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "jsdom",
+    "testPathIgnorePatterns": [
+      "build/"
+    ]
+  },
+  "standard": {
+    "ignore": [
+      "node_modules/",
+      "build/"
+    ],
+    "globals": [
+      "describe",
+      "it",
+      "test",
+      "expect",
+      "afterAll",
+      "jest"
+    ]
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  }
+}
