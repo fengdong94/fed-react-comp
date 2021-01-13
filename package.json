@@ -27,6 +27,12 @@
       "eslint --fix"
     ]
   },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "jsxSingleQuote": true,
+    "trailingComma": "es5"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@storybook/react": "^6.1.12",
