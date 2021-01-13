@@ -1,9 +1,9 @@
-import React, { useCallback, useState } from 'react'
+import React, { useState } from 'react'
 import { Button } from 'antd'
 import 'antd/es/button/style/index.css'
-// import { add } from 'fed-utils'
 
-import PrimaryButton from './PrimaryButton'
+import CustomButton from './CustomButton'
+import './index.scss'
 
 interface Props {
   name: string
@@ -13,21 +13,23 @@ interface Props {
 const Counter: React.FC<Props> = ({ name }) => {
   const [count, setCount] = useState(10)
 
-  const handleDecrement = useCallback(() => {
+  const handleDecrement = () => {
     setCount((count) => count + 1)
-  }, [])
-  const handleIncrement = useCallback(() => {
+  }
+  const handleIncrement = () => {
     setCount((count) => count - 1)
-  }, [])
+  }
 
   return (
-    <React.Fragment>
-      {name}: {count}
+    <div className='counter-container'>
       <Button type='primary' onClick={handleDecrement}>
-        -
+        decrement
       </Button>
-      <PrimaryButton text='+' onClick={handleIncrement} />
-    </React.Fragment>
+      <div className='counter-content'>
+        {name}: {count}
+      </div>
+      <CustomButton text='increment' onClick={handleIncrement} />
+    </div>
   )
 }
 
