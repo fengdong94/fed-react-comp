@@ -14,10 +14,10 @@ const Counter: React.FC<Props> = ({ name }) => {
   const [count, setCount] = useState(10)
 
   const handleDecrement = useCallback(() => {
-    setCount(count - 1)
+    setCount((count) => count + 1)
   }, [])
   const handleIncrement = useCallback(() => {
-    setCount(count - 1)
+    setCount((count) => count - 1)
   }, [])
 
   return (
