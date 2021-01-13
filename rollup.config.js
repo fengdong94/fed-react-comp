@@ -37,6 +37,7 @@ export default {
       preserveModulesRoot: 'src'
     }
   ],
+  external: ['antd'],
   plugins: [
     external(),
     resolve(),
