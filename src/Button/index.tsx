@@ -3,7 +3,7 @@ import { Rate } from 'antd'
 import 'antd/es/rate/index.css'
 // import { add } from 'fed-utils'
 
-import PrimaryButton from './PrimaryButton';
+import PrimaryButton from './PrimaryButton'
 interface Props {
   text: string
 }
