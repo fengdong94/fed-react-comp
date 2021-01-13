@@ -8,16 +8,25 @@
     "lib",
     "es"
   ],
-  "scripts": {
-    "lint": "eslint --ext .ts,.tsx,.js src",
-    "build": "rimraf lib es && rollup -c",
-    "test": "jest --coverage",
-    "storybook": "start-storybook -p 6001",
-    "format": "prettier --write src"
-  },
   "keywords": [],
   "author": "Fred",
   "license": "ISC",
+  "scripts": {
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+    "build": "rimraf lib es && rollup -c",
+    "test": "jest --coverage",
+    "storybook": "start-storybook -p 6001"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix"
+    ]
+  },
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@storybook/react": "^6.1.12",
@@ -26,9 +35,18 @@
     "@types/jest": "^24.0.24",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.13.0",
+    "@typescript-eslint/parser": "^4.13.0",
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.2.2",
+    "eslint": "^7.17.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "husky": "^4.3.7",
     "jest": "^24.9.0",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "rimraf": "^3.0.2",
@@ -37,8 +55,6 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-typescript2": "^0.29.0",
-    "standard": "^14.3.1",
-    "standard-prettier": "^1.0.1",
     "ts-jest": "^24.2.0",
     "typescript": "^3.7.3"
   },
@@ -50,24 +66,9 @@
       "es/"
     ]
   },
-  "standard": {
-    "ignore": [
-      "node_modules/",
-      "lib/",
-      "es/"
-    ],
-    "globals": [
-      "describe",
-      "it",
-      "test",
-      "expect",
-      "afterAll",
-      "jest"
-    ]
-  },
   "peerDependencies": {
-    "antd": ">=4.10.2",
-    "react": ">=16.9.0",
-    "react-dom": ">=16.9.0"
+    "antd": "^4.10.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   }
 }
