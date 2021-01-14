@@ -1,6 +1,6 @@
 {
   "name": "fed-react-comp",
-  "version": "0.0.9",
+  "version": "0.0.12",
   "description": "A react components library",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -14,7 +14,8 @@
   "scripts": {
     "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
     "build": "rimraf lib es && rollup -c",
-    "test": "jest --coverage",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "storybook": "start-storybook -p 6001",
     "storybook:export": "build-storybook"
   },
@@ -27,12 +28,6 @@
     "*.{js,ts,tsx}": [
       "eslint --fix"
     ]
-  },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true,
-    "jsxSingleQuote": true,
-    "trailingComma": "es5"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
@@ -55,6 +50,7 @@
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^4.3.7",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
     "lint-staged": "^10.5.3",
     "node-sass": "^5.0.0",
@@ -71,15 +67,8 @@
     "ts-jest": "^24.2.0",
     "typescript": "^3.7.3"
   },
-  "jest": {
-    "preset": "ts-jest",
-    "testEnvironment": "jsdom",
-    "testPathIgnorePatterns": [
-      "lib/",
-      "es/"
-    ]
-  },
   "peerDependencies": {
+    "antd": "^4.10.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   }
