@@ -17,7 +17,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 6001",
-    "storybook:export": "build-storybook"
+    "storybook:build": "build-storybook"
   },
   "husky": {
     "hooks": {
