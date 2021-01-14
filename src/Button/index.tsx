@@ -3,13 +3,18 @@ import './index.scss'
 
 export interface Props {
   type: 'primary' | 'secondary' | 'third'
-  children: unknown
+  text: string
+  color: string
 }
 
-const Button: React.FC<Props> = ({ type, children }) => {
+const Button: React.FC<Props> = ({ type, text, color }) => {
   return (
-    <button data-testid='test-component-button' className={`btn ${type}`}>
-      {children}
+    <button
+      data-testid='test-component-button'
+      className={`btn ${type}`}
+      style={{ color }}
+    >
+      {text}
     </button>
   )
 }

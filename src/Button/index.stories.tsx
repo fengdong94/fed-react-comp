@@ -1,10 +1,34 @@
 import React from 'react'
 import Button from '.'
 
-export default { title: 'Button' }
+const Template = (args) => <Button {...args}></Button>
 
-export const primary: React.FC = () => <Button type='primary'>primary</Button>
-export const secondary: React.FC = () => (
-  <Button type='secondary'>secondary</Button>
-)
-export const third: React.FC = () => <Button type='third'>third</Button>
+// Each story then reuses that template
+export const Primary = Template.bind({})
+Primary.args = {
+  type: 'primary',
+  color: '#fff',
+  text: 'primary',
+}
+
+export const Secondary = Template.bind({})
+Secondary.args = {
+  type: 'secondary',
+  color: '#fff',
+  text: 'secondary',
+}
+
+export const Third = Template.bind({})
+Third.args = {
+  type: 'third',
+  color: '#fff',
+  text: 'third',
+}
+
+export default {
+  title: 'Button',
+  component: Button,
+  argTypes: {
+    color: { control: 'color' },
+  },
+}

@@ -2,6 +2,8 @@
 
 ## 介绍
 
+主要参考 <https://blog.harveydelaney.com/creating-your-own-react-component-library/>
+
 该项目用于构建 [react](https://reactjs.org/) 组件库，基于 [typescript](https://www.typescriptlang.org/) 和 [sass](https://sass-lang.com/) 开发，使用 [rollup](https://github.com/rollup/rollup) 打包。
 
 同时使用 [storybook](https://storybook.js.org/) 调试和生成组件使用文档，基于 [jest](https://jestjs.io/) 做组件测试。

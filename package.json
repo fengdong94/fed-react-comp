@@ -37,6 +37,7 @@
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-image": "^2.0.6",
     "@rollup/plugin-node-resolve": "^11.0.1",
+    "@storybook/addon-essentials": "^6.1.14",
     "@storybook/react": "^6.1.12",
     "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/react": "^11.2.3",

@@ -9,7 +9,8 @@ describe('Test Component', () => {
   beforeEach(() => {
     props = {
       type: 'primary',
-      children: 'whatever',
+      text: 'whatever',
+      color: '#fff',
     }
   })
 
