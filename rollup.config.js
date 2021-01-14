@@ -1,9 +1,9 @@
-import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 import typescript from 'rollup-plugin-typescript2'
 import postcss from 'rollup-plugin-postcss'
 import image from '@rollup/plugin-image'
+import pkg from './package.json'
 
 export default {
   input: 'src/index.tsx',
@@ -25,13 +25,9 @@ export default {
       preserveModulesRoot: 'src',
     },
   ],
-  external: ['antd'],
-  plugins: [
-    peerDepsExternal(),
-    resolve(),
-    commonjs(),
-    typescript(),
-    postcss(),
-    image(),
+  external: [
+    ...Object.keys(pkg.dependencies),
+    ...Object.keys(pkg.peerDependencies),
   ],
+  plugins: [resolve(), commonjs(), typescript(), postcss(), image()],
 }
