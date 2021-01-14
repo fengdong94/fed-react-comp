@@ -1561,6 +1561,14 @@
     magic-string "^0.25.7"
     resolve "^1.17.0"
 
+"@rollup/plugin-image@^2.0.6":
+  version "2.0.6"
+  resolved "https://registry.npm.taobao.org/@rollup/plugin-image/download/@rollup/plugin-image-2.0.6.tgz#2e6d7a72b25df81aa80c8c0866d45a45c1e6a265"
+  integrity sha1-Lm16crJd+BqoDIwIZtRaRcHmomU=
+  dependencies:
+    "@rollup/pluginutils" "^3.1.0"
+    mini-svg-data-uri "^1.2.3"
+
 "@rollup/plugin-node-resolve@^11.0.1":
   version "11.0.1"
   resolved "https://registry.npm.taobao.org/@rollup/plugin-node-resolve/download/@rollup/plugin-node-resolve-11.0.1.tgz?cache=0&sync_timestamp=1607997767759&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40rollup%2Fplugin-node-resolve%2Fdownload%2F%40rollup%2Fplugin-node-resolve-11.0.1.tgz#d3765eec4bccf960801439a999382aed2dca959b"
@@ -8344,6 +8352,11 @@ mini-store@^3.0.1:
   dependencies:
     hoist-non-react-statics "^3.3.2"
     shallowequal "^1.0.2"
+
+mini-svg-data-uri@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.npm.taobao.org/mini-svg-data-uri/download/mini-svg-data-uri-1.2.3.tgz#e16baa92ad55ddaa1c2c135759129f41910bc39f"
+  integrity sha1-4Wuqkq1V3aocLBNXWRKfQZELw58=
 
 minimalistic-assert@^1.0.0, minimalistic-assert@^1.0.1:
   version "1.0.1"

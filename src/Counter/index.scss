@@ -1,6 +1,9 @@
 .counter-container {
   display: flex;
   align-items: center;
+  img {
+    width: 50px;
+  }
   .ant-btn {
     background: #cdd;
     color: #000;

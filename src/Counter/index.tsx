@@ -4,6 +4,7 @@ import 'antd/es/button/style/index.css'
 
 import CustomButton from './CustomButton'
 import './index.scss'
+import reactImg from './react.jpg'
 
 interface Props {
   name: string
@@ -22,6 +23,7 @@ const Counter: React.FC<Props> = ({ name }) => {
 
   return (
     <div className='counter-container'>
+      <img src={reactImg} />
       <Button type='primary' onClick={handleDecrement}>
         decrement
       </Button>
